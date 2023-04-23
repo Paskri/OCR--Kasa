@@ -1,0 +1,15 @@
+.gallery {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 0 20px 20px;
+  width: 100%;
+}
+
+@media screen and (min-width: 900px) {
+  .gallery {
+    padding: 0 5vw;
+    margin-top: 20px;
+    min-height: 2700px;
+  }
+}

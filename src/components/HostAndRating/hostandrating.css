@@ -1,0 +1,50 @@
+.host {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 0;
+}
+.host img {
+  width: 32px;
+  height: 32px;
+  border-radius: 16px;
+}
+.name {
+  font-size: 0.75rem;
+  line-height: 1rem;
+  margin-right: 10px;
+  text-align: right;
+}
+.stars {
+  display: flex;
+  align-items: center;
+}
+.stars img {
+  width: 13px;
+  height: 13px;
+  margin-right: 7px;
+}
+
+@media screen and (min-width: 900px) {
+  .host {
+    margin-bottom: 27px;
+  }
+  .host img {
+    width: 64px;
+    height: 64px;
+    border-radius: 32px;
+  }
+  .name {
+    font-size: 1.125rem;
+    line-height: 1.6rem;
+  }
+  .stars {
+    justify-content: end;
+  }
+  .stars img {
+    width: 24px;
+    height: 24px;
+    margin-left: 15px;
+    margin-right: 0;
+  }
+}
