@@ -1,5 +1,4 @@
 import Gallery from '../components/Gallery'
-//import Slogan from "../Components/Slogan"
 import landscape from '../assets/landscape.jpg'
 import Banner from '../components/Banner'
 import '../styles/home.css'

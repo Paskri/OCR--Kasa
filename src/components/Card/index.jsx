@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom'
 import './card.css'
-//import 'card.scss'
 
 export default function Card(props) {
   const { id, cover, title } = props

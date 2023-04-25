@@ -5,7 +5,7 @@ import '../styles/about.css'
 export default function About() {
   return (
     <>
-      <Banner img={landscape} slogan="À propos" hidden="hidden" />
+      <Banner img={landscape} slogan="" />
       <section className="about">
         <Collapse
           size="large"
