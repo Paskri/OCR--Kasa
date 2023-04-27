@@ -3,6 +3,7 @@
   width: 100%;
 }
 .btn-collapse {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -13,17 +14,22 @@
   color: white;
   padding: 0 20px;
   border: none;
+  z-index: 10;
 }
 .btn-collapse img {
   width: 24px;
   height: 14px;
 }
 .collapsable {
-  padding: 0px 12px 0px 20px;
-  margin-bottom: 50px;
+  padding: 5px 12px 0px 20px;
+  margin-bottom: 20px;
+  margin-top: -10px;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.5s ease-out;
+  background-color: #f7f7f7;
+  border-radius: 5px 5px;
+  z-index: 0;
 }
 
 .collapsable-container.small h2,
@@ -33,12 +39,19 @@
   font-weight: 500;
 }
 
-.collapsable.large p,
+.collapsable.large p {
+  padding-top: 17px;
+  font-size: 0.75rem;
+  line-height: 1.1rem;
+  margin-bottom: 52px;
+}
+
 .collapsable.small p,
 .collapsable.small ul {
   padding-top: 17px;
   font-size: 0.75rem;
   line-height: 1.1rem;
+  margin-bottom: 2px;
 }
 
 .show {
@@ -56,24 +69,27 @@
     border-radius: 10px;
   }
   .collapsable {
-    margin-bottom: 30px;
+    margin-bottom: 33px;
+  }
+  .collapsable.small {
+    margin-bottom: 14px;
   }
   .collapsable-container.small {
     width: 47%;
   }
-
-  .collapsable.small p,
-  .collapsable.small ul {
-    padding-top: 30px;
-    font-weight: 400;
-    font-size: 1.125rem;
-    line-height: 1.6rem;
-  }
-
   .collapsable.large p {
     padding-top: 18px;
     font-size: 1.5rem;
     line-height: 1.6rem;
+    margin-bottom: 12px;
+  }
+  .collapsable.small p,
+  .collapsable.small ul {
+    padding-top: 27px;
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 1.6rem;
+    margin-bottom: 52px;
   }
   .collapsable-container.small h2 {
     font-size: 1.125rem;

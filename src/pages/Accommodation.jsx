@@ -8,7 +8,7 @@ import '../styles/accommodation.css'
 import useFetch from '../hooks/useFetch'
 import Loader from '../components/Loader'
 
-export default function Accommodations() {
+export default function Accommodation() {
   const {
     data: logements,
     loading,
